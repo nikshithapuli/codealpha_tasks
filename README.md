@@ -1,35 +1,24 @@
-# Basic Network Sniffer
+# Secure Coding Review
 
 ## Objective
-Capture and analyze network packets using Python.
+Review a Python program to identify security weaknesses and provide a more secure version.
 
-## Tools Used
-- Python
-- Scapy
-- Npcap
-- Visual Studio Code
+## Language
+Python
 
-## Features
-- Captures network packets
-- Displays Source IP
-- Displays Destination IP
-- Displays Protocol (TCP/UDP)
-- Displays Packet Length
+## Vulnerabilities Found
+- Hardcoded credentials
+- Password visible while typing
+- No password protection mechanism
 
-## How to Run
-1. Install Python.
-2. Install Scapy using:
-   pip install scapy
-3. Install Npcap.
-4. Run:
-   python network_sniffer.py
+## Improvements
+- Used getpass to hide password input.
+- Separated credentials into constants.
+- Improved readability.
 
-## Output
-The program displays:
-- Source IP
-- Destination IP
-- Protocol
-- Packet Length
+## Files
+- vulnerable_code.py
+- secure_code.py
 
 ## Conclusion
-This project demonstrates how packet sniffing works using Python.
+Secure coding practices reduce security risks and help protect sensitive information.
